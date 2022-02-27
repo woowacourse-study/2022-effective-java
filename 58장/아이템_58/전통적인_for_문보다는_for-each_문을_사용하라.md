@@ -45,6 +45,8 @@ for (Element e : elements) {
 - 해당 반복문은 "`elements`안의 각 원소 `e`에 대해"라고 읽는다.
     - 콜론(:)은 "안의(in)"을 의미
 - `for-each`문이 만들어내는 코드는 사람이 손으로 최적화 한 것과 사실상 같기 때문에 반복 대상이 컬렉션이든 배열이든, `for-each`문을 사용해도 속도는 그대로이다
+- 성능에 관한 자세한 사항은 아래 블로그에서 확인할 수 있다.
+  - https://www.geekyhacker.com/2019/04/17/java-loops-speed-benchmark-in-jdk-11/
 ---
 ### 반복문 중첩 순회
 - 중첩 순회시 `for-each`의 이점은 더욱 커진다
