@@ -116,7 +116,7 @@ for (Element e : elements) {
 
 1. **파괴적인 필터링(destructive filtering)** 
   - 컬렉션을 순회하며 선택된 원소를 제거해야 한다면 반복자의 remove 메서드를 호출해야 한다.
-  - 자바8부터 Coleection의 removeIf 메서드를 사용해 컬렉션을 명시적으로 순회하는 일을 피할 수 있다
+  - 자바8부터 Collection의 removeIf 메서드를 사용해 컬렉션을 명시적으로 순회하는 일을 피할 수 있다
     - 예시
       ```java
       List<CardNo> cardNos = new ArrayList<>();
