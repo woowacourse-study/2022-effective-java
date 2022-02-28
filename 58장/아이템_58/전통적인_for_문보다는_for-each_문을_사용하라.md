@@ -158,15 +158,15 @@ for (Element e : elements) {
 3. **병렬 반복(parallel iteration)**
   - 여러 컬렉션을 병렬로 순회해야 한다면 각각의 반복자와 인덱스 변수를 사용해 엄격하고 명시적으로 제어해야 한다 (앞선 Type와 Rank의 상황과 비슷하다)
     ```java
-    private Set<String> one;
-    private Set<String> two;
-  
-    public void run(){
-        for (Iterator<String> iterOne=one.iterator(),Iterator<String> iterTwo=two.iterator(); iterOne.hasNext() && iterTwo.hasNext(); ) {
-            // do something with iterOne.next() and iterTwo.next()
-        }
+    List<Integer> one = Arrays.asList(1, 2, 3);
+    List<Integer> two = Arrays.asList(10, 20, 30);
+    
+    for (Iterator<Integer> o = one.iterator(), t = two.iterator(); o.hasNext() && t.hasNext(); ) {
+       System.out.printf("one %d : two %d%n", o.next(), t.next());
     }
     ```
+    - 결과화면  
+    ![img.png](images/parallel_iteration.png)
 
 ### Iterable 인터페이스
 - for-each문을 사용하면 컬렉션과 배열은 물론 Iterable 인터페이스를 구현한 객체라면 무엇이든 순회할 수 있다
