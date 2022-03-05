@@ -58,7 +58,7 @@
 - [ ] 52. 다중정의는 신중히 사용하라	
 - [ ] 53. 가변인수는 신중히 사용하라	
 - [x] 54. [null이 아닌, 빈 컬렉션이나 배열을 반환하라](https://github.com/woowacourse-study/2022-effective-java/blob/main/08%EC%9E%A5/%EC%95%84%EC%9D%B4%ED%85%9C_54/null%EC%9D%B4_%EC%95%84%EB%8B%8C_%EB%B9%88_%EC%BB%AC%EB%A0%89%EC%85%98%EC%9D%B4%EB%82%98_%EB%B0%B0%EC%97%B4%EC%9D%84_%EB%B0%98%ED%99%98%ED%95%98%EB%9D%BC.md) (호호)
-- [ ] 55. 옵셔널 반환은 신중히 하라	
+- [x] 55. 옵셔널 반환은 신중히 하라	
 - [ ] 56. 공개된 API 요소에는 항상 문서화 주석을 작성하라
 - [ ] 57. 지역변수의 범위를 최소화하라	
 - [x] 58. [전통적인 for 문보다는 for-each 문을 사용하라](https://github.com/woowacourse-study/2022-effective-java/blob/main/08%EC%9E%A5/%EC%95%84%EC%9D%B4%ED%85%9C_58/%EC%A0%84%ED%86%B5%EC%A0%81%EC%9D%B8_for_%EB%AC%B8%EB%B3%B4%EB%8B%A4%EB%8A%94_for-each_%EB%AC%B8%EC%9D%84_%EC%82%AC%EC%9A%A9%ED%95%98%EB%9D%BC.md)	(썬)
