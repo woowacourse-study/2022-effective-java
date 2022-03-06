@@ -44,7 +44,7 @@ Java의 실수 표현을 위한 `double`과 `float`의 경우 `IEEE 754 부동 �
 
 작성 날짜를 기준으로 비트코인 `1 BTC`는 한화 약 `47,000,000 KRW`로 거래되고 있다. 이러한 비트코인은 1개 보다 작은 단위로 나눠서 거래가 가능하다.
 
-필자에게 1.015 BTC가 있다고 가정한다. 특정한 상품의 가격이 0.13 BTC라고 가정한 뒤 구매하기 위해 기존 값에서 계산을 진행한다.
+본인에게 1.015 BTC가 있다고 가정한다. 특정한 상품의 가격이 0.13 BTC라고 가정한 뒤 구매하기 위해 기존 값에서 계산을 진행한다.
 
 ```java
 public class FloatingPointTest {
@@ -69,7 +69,7 @@ public class FloatingPointTest {
 
 ## 올바른 방안
 
-위 같은 문제를 올바르게 해결하기 위해서는 고정 소수점 방식을 활용한 `BigDecimal`이나 `int`, `long`을 사용해야한다.
+위 같은 문제를 올바르게 해결하기 위해서는 정수를 이용하여 실수를 표현한 `BigDecimal`이나 `int`, `long`을 사용해야 한다.
 
 ## BigDecimal
 
@@ -168,7 +168,7 @@ void duplicateBigDecimalTreeSetTest() {
 @Test
 void duplicateBigDecimalHashSetTest() {
     // given
-    Set<BigDecimal> bigDecimals = new HashSet<>(Set.of(new BigDecimal("2.00"), new BigDecimal("2.0")))
+    Set<BigDecimal> bigDecimals = new HashSet<>(Set.of(new BigDecimal("2.00"), new BigDecimal("2.0")));
 
     // when
     int size = bigDecimals.size();
