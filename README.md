@@ -56,7 +56,7 @@
 - [ ] 50. 적시에 방어적 복사본을 만들라	
 - [ ] 51. 메서드 시그니처를 신중히 설계하라
 - [ ] 52. 다중정의는 신중히 사용하라	
-- [ ] 53. 가변인수는 신중히 사용하라	
+- [x] 53. [가변인수는 신중히 사용하라](https://github.com/jayjaehunchoi/effective-java/blob/huni/08%EC%9E%A5/%EC%95%84%EC%9D%B4%ED%85%9C_53/README.md) (후니)	
 - [x] 54. [null이 아닌, 빈 컬렉션이나 배열을 반환하라](https://github.com/woowacourse-study/2022-effective-java/blob/main/08%EC%9E%A5/%EC%95%84%EC%9D%B4%ED%85%9C_54/null%EC%9D%B4_%EC%95%84%EB%8B%8C_%EB%B9%88_%EC%BB%AC%EB%A0%89%EC%85%98%EC%9D%B4%EB%82%98_%EB%B0%B0%EC%97%B4%EC%9D%84_%EB%B0%98%ED%99%98%ED%95%98%EB%9D%BC.md) (호호)
 - [x] 55. [옵셔널 반환은 신중히 하라](https://github.com/woowacourse-study/2022-effective-java/blob/main/08%EC%9E%A5/%EC%95%84%EC%9D%B4%ED%85%9C_55/%EC%98%B5%EC%85%94%EB%84%90_%EB%B0%98%ED%99%98%EC%9D%80_%EC%8B%A0%EC%A4%91%ED%9E%88_%ED%95%98%EB%9D%BC.md) (호호)	
 - [ ] 56. 공개된 API 요소에는 항상 문서화 주석을 작성하라
