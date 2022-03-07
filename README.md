@@ -63,7 +63,7 @@
 - [ ] 57. 지역변수의 범위를 최소화하라	
 - [x] 58. [전통적인 for 문보다는 for-each 문을 사용하라](https://github.com/woowacourse-study/2022-effective-java/blob/main/08%EC%9E%A5/%EC%95%84%EC%9D%B4%ED%85%9C_58/%EC%A0%84%ED%86%B5%EC%A0%81%EC%9D%B8_for_%EB%AC%B8%EB%B3%B4%EB%8B%A4%EB%8A%94_for-each_%EB%AC%B8%EC%9D%84_%EC%82%AC%EC%9A%A9%ED%95%98%EB%9D%BC.md)	(썬)
 - [ ] 59. 라이브러리를 익히고 사용하라	
-- [ ] 60. 정확한 답이 필요하다면 float와 double은 피하라
+- [x] 60. 정확한 답이 필요하다면 float와 double은 피하라 (매트)
 - [ ] 61. 박싱된 기본 타입보다는 기본 타입을 사용하라	
 - [ ] 62. 다른 타입이 적절하다면 문자열 사용을 피하라	
 - [ ] 63. 문자열 연결은 느리니 주의하라	
