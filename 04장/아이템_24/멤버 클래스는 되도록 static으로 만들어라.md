@@ -198,7 +198,6 @@ interface Operator {
 
 - 즉석에서 작은 함수 객체나 처리 객체를 만드는 데 주로 사용  
   👉 람다 등장 이후로 람다가 이 역할을 대체
-- 정적 팩터리 메소드 구현 시 사용
 
 ```java
 List<Integer> list = Arrays.asList(10, 5, 6, 7, 1, 3, 4);
@@ -213,6 +212,20 @@ Collections.sort(list, new Comparator<Integer>() {
 
 // 람다 도입 후
 Collections.sort(list, Comparator.comparingInt(o -> o));
+```
+
+- 정적 팩터리 메소드 구현 시 사용
+
+```java
+static List<Integer> intArrayAsList(int[] a) {
+    Objects.requiredNonNull(a);
+    
+    return new AbstracktList<>() {
+        @Override public Integer get(int i) {
+            return a[i];
+        }
+    }
+}
 ```
 
 ### 📘 지역 클래스
