@@ -45,7 +45,7 @@
 - [ ] 39. 명명 패턴보다 애너테이션을 사용하라	
 - [ ] 40. @Override 애너테이션을 일관되게 사용하라	
 - [ ] 41. 정의하려는 것이 타입이라면 마커 인터페이스를 사용하라
-- [ ] 42. 익명 클래스보다는 람다를 사용하라	
+- [x] 42. 익명 클래스보다는 람다를 사용하라	(매트)
 - [ ] 43. 람다보다는 메서드 참조를 사용하라	
 - [ ] 44. 표준 함수형 인터페이스를 사용하라
 - [x] 45. [스트림은 주의해서 사용하라](https://github.com/woowacourse-study/2022-effective-java/blob/main/07%EC%9E%A5/%EC%95%84%EC%9D%B4%ED%85%9C_45/%EC%8A%A4%ED%8A%B8%EB%A6%BC%EC%9D%80_%EC%A3%BC%EC%9D%98%ED%95%B4%EC%84%9C_%EC%82%AC%EC%9A%A9%ED%95%98%EB%9D%BC.md)	(야호)
@@ -63,7 +63,7 @@
 - [ ] 57. 지역변수의 범위를 최소화하라	
 - [x] 58. [전통적인 for 문보다는 for-each 문을 사용하라](https://github.com/woowacourse-study/2022-effective-java/blob/main/08%EC%9E%A5/%EC%95%84%EC%9D%B4%ED%85%9C_58/%EC%A0%84%ED%86%B5%EC%A0%81%EC%9D%B8_for_%EB%AC%B8%EB%B3%B4%EB%8B%A4%EB%8A%94_for-each_%EB%AC%B8%EC%9D%84_%EC%82%AC%EC%9A%A9%ED%95%98%EB%9D%BC.md)	(썬)
 - [ ] 59. 라이브러리를 익히고 사용하라	
-- [x] 60. 정확한 답이 필요하다면 float와 double은 피하라 (매트)
+- [x] 60. [정확한 답이 필요하다면 float와 double은 피하라](https://github.com/woowacourse-study/2022-effective-java/blob/main/09%EC%9E%A5/%EC%95%84%EC%9D%B4%ED%85%9C_60/%EC%A0%95%ED%99%95%ED%95%9C%20%EB%8B%B5%EC%9D%B4%20%ED%95%84%EC%9A%94%ED%95%98%EB%8B%A4%EB%A9%B4%20float%EC%99%80%20double%EC%9D%80%20%ED%94%BC%ED%95%98%EB%9D%BC.md) (매트)
 - [ ] 61. 박싱된 기본 타입보다는 기본 타입을 사용하라	
 - [ ] 62. 다른 타입이 적절하다면 문자열 사용을 피하라	
 - [ ] 63. 문자열 연결은 느리니 주의하라	
