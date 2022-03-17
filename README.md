@@ -29,7 +29,7 @@
 - [ ] 23. 태그 달린 클래스보다는 클래스 계층구조를 활용하라	
 - [x] 24. [멤버 클래스는 되도록 static으로 만들라](https://github.com/yeon-06/effective-java/blob/item24/04%EC%9E%A5/%EC%95%84%EC%9D%B4%ED%85%9C_24/%EB%A9%A4%EB%B2%84%20%ED%81%B4%EB%9E%98%EC%8A%A4%EB%8A%94%20%EB%90%98%EB%8F%84%EB%A1%9D%20static%EC%9C%BC%EB%A1%9C%20%EB%A7%8C%EB%93%A4%EC%96%B4%EB%9D%BC.md) (연로그)
 - [ ] 25. 톱레벨 클래스는 한 파일에 하나만 담으라	
-- [x] 26. [로 타입은 사용하지 말라](https://github.com/woowacourse-study/2022-effective-java/blob/main/05%EC%9E%A5/%EC%95%84%EC%9D%B4%ED%85%9C_26/%EB%A1%9C%20%ED%83%80%EC%9E%85%EC%9D%80%20%EC%82%AC%EC%9A%A9%ED%95%98%EC%A7%80%20%EB%A7%90%EB%9D%BC.md)
+- [x] 26. [로 타입은 사용하지 말라](https://github.com/woowacourse-study/2022-effective-java/blob/main/05%EC%9E%A5/%EC%95%84%EC%9D%B4%ED%85%9C_26/%EB%A1%9C%20%ED%83%80%EC%9E%85%EC%9D%80%20%EC%82%AC%EC%9A%A9%ED%95%98%EC%A7%80%20%EB%A7%90%EB%9D%BC.md) (루키)
 - [ ] 27. 비검사 경고를 제거하라	
 - [x] 28. [배열보다는 리스트를 사용하라](https://github.com/woowacourse-study/2022-effective-java/blob/main/5%EC%9E%A5/%EC%95%84%EC%9D%B4%ED%85%9C_28/%EB%B0%B0%EC%97%B4%EB%B3%B4%EB%8B%A4%EB%8A%94_%EB%A6%AC%EC%8A%A4%ED%8A%B8%EB%A5%BC_%EC%82%AC%EC%9A%A9%ED%95%98%EB%9D%BC.md) (토르)	
 - [ ] 29. 이왕이면 제네릭 타입으로 만들라	
