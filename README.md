@@ -78,7 +78,7 @@
 - [x] 72. [표준 예외를 사용하라](https://github.com/injoon2019/2022-effective-java/blob/main/10%EC%9E%A5/%EC%95%84%EC%9D%B4%ED%85%9C_72/%EC%95%84%EC%9D%B4%ED%85%9C%2072.%20%ED%91%9C%EC%A4%80%20%EC%98%88%EC%99%B8%EB%A5%BC%20%EC%82%AC%EC%9A%A9%ED%95%98%EB%9D%BC.md) (토르)	
 - [ ] 73. 추상화 수준에 맞는 예외를 던지라	
 - [ ] 74. 메서드가 던지는 모든 예외를 문서화하라	
-- [ ] 75. 예외의 상세 메시지에 실패 관련 정보를 담으라	
+- [x] 75. [예외의 상세 메시지에 실패 관련 정보를 담으라](https://github.com/yhh1056/2022-effective-java/blob/yhh1056/10%EC%9E%A5/%EC%95%84%EC%9D%B4%ED%85%9C_75/%EC%98%88%EC%99%B8%EB%8A%94_%EC%83%81%EC%84%B8_%EB%A9%94%EC%8B%9C%EC%A7%80%EC%97%90_%EC%8B%A4%ED%8C%A8_%EA%B4%80%EB%A0%A8_%EC%A0%95%EB%B3%B4%EB%A5%BC_%EB%8B%B4%EC%9C%BC%EB%9D%BC.md) (호호)	
 - [ ] 76. 가능한 한 실패 원자적으로 만들라	
 - [ ] 77. 예외를 무시하지 말라
 - [x] 78. [공유 중인 가변 데이터는 동기화해 사용하라](https://github.com/leo0842/2022-effective-java/blob/leo0842/11%EC%9E%A5/%EC%95%84%EC%9D%B4%ED%85%9C_78/%EA%B3%B5%EC%9C%A0_%EC%A4%91%EC%9D%B8_%EA%B0%80%EB%B3%80_%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%8A%94_%EB%8F%99%EA%B8%B0%ED%99%94%ED%95%B4_%EC%82%AC%EC%9A%A9%ED%95%98%EB%9D%BC.md) (에덴)	
