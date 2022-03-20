@@ -127,11 +127,69 @@ public class TopPoint {
 
 ## 😿 자바 플랫폼 라이브러리에서 필드를 노출시킨 사례
 
-java.awt.package 패키지 - Point, Dimension 클래스
+> java.awt.package 패키지 - Point, Dimension 클래스
+
+_java.awt.Component 클래스 내부_
+
+```JAVA
+    ...
+
+    public Dimension getSize() {
+		return size();
+	}
+
+	@Deprecated
+	public Dimension size() {
+		return new Dimension(width, height);
+	}
+
+    ...
+```
+
+_java.awt.Dimension 클래스 내부_
 
 ```JAVA
 public class Dimension extends Dimension2D implements java.io.Serializable {
 	public int width;
 	public int height;
+
+    ...
 }
 ```
+
+### Dimesion 클래스의 필드는 가변으로 설계됨
+
+▶ getSize 를 호출하는 모든 곳에서 방어적 복사를 위해 인스턴스를 새로 생성해야 함
+
+---
+
+## 😾 불변 필드를 노출한 public 클래스
+
+```JAVA
+public class Time {
+	private static final int HOURS_PER_DAY = 24;
+	private static final int MINUTES_PER_HOUR = 60;
+
+	public final int hour;
+	public final int minute;
+
+	public Time(int hour, int minute) {
+		if (hour < 0 || hour > HOURS_PER_DAY) {
+			throw new IllegalArgumentException("시간: " + hour);
+		}
+		if (minute < 0 || minute > MINUTES_PER_HOUR) {
+			throw new IllegalArgumentException("분: " + minute);
+		}
+		this.hour = hour;
+		this.minute = minute;
+	}
+
+	...
+}
+```
+
+### 불변식은 보장할 수 있음
+
+▶ 각 인스턴스가 유효한 시간을 표현함을 보장함
+
+### 여전히 불변식 보장 외의 두가지 문제를 해결할 수 없음
