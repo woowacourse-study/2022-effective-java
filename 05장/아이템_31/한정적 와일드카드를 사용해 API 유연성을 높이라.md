@@ -234,7 +234,7 @@ Set<Number> numbers = union(integers, doubles)
 
 ```java
 public static <E> void swap(List<E> list, int i, int j) // 타입 매개변수 
-public static void swap2(List list, int i, int j)       // 와일드카드
+public static void swap2(List<?> list, int i, int j)       // 와일드카드
 ```
 
 여러분은 어떤 방법을 사용하는 것이 더 좋다고 생각하시나요? 책에서는 두 번째 방법을 추천하고 있습니다.
