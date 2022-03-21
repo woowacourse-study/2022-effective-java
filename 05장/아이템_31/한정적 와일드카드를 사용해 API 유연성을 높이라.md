@@ -11,7 +11,7 @@
 
 <br>
 
-예를 들어보죠. `List<String>`은 `List<Object>`의 하위 타입이 아닙니다. 그 이유는 List<String>이 List<Object>가 하는 일을 재대로 수행하지 못하기 때문입니다. (리스코프 치환원칙을 위배)
+예를 들어보죠. `List<String>`은 `List<Object>`의 하위 타입이 아닙니다. 그 이유는 `List<String>`이 `List<Object>`가 하는 일을 재대로 수행하지 못하기 때문입니다. (리스코프 치환원칙을 위배)
 
 <br>
 
