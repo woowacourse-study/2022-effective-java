@@ -62,7 +62,7 @@
 - [ ] 56. 공개된 API 요소에는 항상 문서화 주석을 작성하라
 - [x] 57. [지역변수의 범위를 최소화하라](./09장/아이템_57/지역변수의_범위를_최소화하라.md)	(후니)
 - [x] 58. [전통적인 for 문보다는 for-each 문을 사용하라](https://github.com/woowacourse-study/2022-effective-java/blob/main/08%EC%9E%A5/%EC%95%84%EC%9D%B4%ED%85%9C_58/%EC%A0%84%ED%86%B5%EC%A0%81%EC%9D%B8_for_%EB%AC%B8%EB%B3%B4%EB%8B%A4%EB%8A%94_for-each_%EB%AC%B8%EC%9D%84_%EC%82%AC%EC%9A%A9%ED%95%98%EB%9D%BC.md)	(썬)
-- [x] 59. [라이브러리를 익히고 사용하라]	(https://github.com/leo0842/2022-effective-java/blob/leo0842/09%EC%9E%A5/%EC%95%84%EC%9D%B4%ED%85%9C_59/%EB%9D%BC%EC%9D%B4%EB%B8%8C%EB%9F%AC%EB%A6%AC%EB%A5%BC_%EC%9D%B5%ED%9E%88%EA%B3%A0_%EC%82%AC%EC%9A%A9%ED%95%98%EB%9D%BC.md) (에덴)
+- [x] 59. [라이브러리를 익히고 사용하라](https://github.com/leo0842/2022-effective-java/blob/leo0842/09%EC%9E%A5/%EC%95%84%EC%9D%B4%ED%85%9C_59/%EB%9D%BC%EC%9D%B4%EB%B8%8C%EB%9F%AC%EB%A6%AC%EB%A5%BC_%EC%9D%B5%ED%9E%88%EA%B3%A0_%EC%82%AC%EC%9A%A9%ED%95%98%EB%9D%BC.md) (에덴)
 - [x] 60. [정확한 답이 필요하다면 float와 double은 피하라](https://github.com/woowacourse-study/2022-effective-java/blob/main/09%EC%9E%A5/%EC%95%84%EC%9D%B4%ED%85%9C_60/%EC%A0%95%ED%99%95%ED%95%9C%20%EB%8B%B5%EC%9D%B4%20%ED%95%84%EC%9A%94%ED%95%98%EB%8B%A4%EB%A9%B4%20float%EC%99%80%20double%EC%9D%80%20%ED%94%BC%ED%95%98%EB%9D%BC.md) (매트)
 - [x] 61. [박싱된 기본 타입보다는 기본 타입을 사용하라](https://github.com/woowacourse-study/2022-effective-java/pull/74) (토르)	
 - [ ] 62. 다른 타입이 적절하다면 문자열 사용을 피하라	
