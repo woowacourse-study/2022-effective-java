@@ -58,16 +58,20 @@ void patternTest() {
 
 ``` java
 public boolean equals(Object o) {
-    if (o == this)
+    if (o == this) {
         return true;
+    }
 
-    if (!(o instanceof Set))
+    if (!(o instanceof Set)) {
         return false;
+    }
+    
     Collection<?> c = (Collection<?>) o;
-    if (c.size() != size())
+    if (c.size() != size()) { // 사이즈 비교
         return false;
+    }
     try {
-        return containsAll(c);
+        return containsAll(c); // 내부 인스턴스 비교
     } catch (ClassCastException | NullPointerException unused) {
         return false;
     }
@@ -149,29 +153,31 @@ null이 아닌 모든 참조 값 x, y, z에 대해,
 
 ``` java
 public final class CaseInsensitiveString {
-    private final String s;
+
+    private final String str;
     
-    public CaseInsensitiveString(String s) {
-        this.s = Objects.requireNonNull(s);
+    public CaseInsensitiveString(String str) {
+        this.str = Objects.requireNonNull(str);
     }
     
     @Override
     public boolean equals(Object o) {
-    if(o instanceof CaseInsensitiveString) {
-        return s.equalsIgnoreCase(((CaseInsensitiveString) o).s);
-    }
+        if (o instanceof CaseInsensitiveString) {
+            return str.equalsIgnoreCase(((CaseInsensitiveString) o).str);
+        }
     
-    if(o instanceof String) { //한 방향으로만 작동!!
-        return s.equalsIgnoreCase((String) o);
+        if (o instanceof String) { // 한 방향으로만 작동한다.
+            return str.equalsIgnoreCase((String) o);
+        }
+        return false;
     }
-    return false;
 }
 
 void symmetryTest() {
     CaseInsensitiveString caseInsensitiveString = new CaseInsensitiveString("Test");
     String test = "test";
-    System.out.println(caseInsensitiveString.equals(test)); //true
-    System.out.println(test.equals(caseInsensitiveString)); //false
+    System.out.println(caseInsensitiveString.equals(test)); // true
+    System.out.println(test.equals(caseInsensitiveString)); // false
 }
 ```
 
@@ -185,6 +191,7 @@ y.equals(z)가 true이면 x.equals(z)도 true이다.
 
 ``` java
 public class Point {
+
     private final int x;
     private final int y;
     
@@ -195,7 +202,9 @@ public class Point {
     
     @Override
     public boolean equals(Object o) {
-    if(!(o instanceof Point)) return false;
+        if (!(o instanceof Point)) {
+            return false;
+        }
         Point p = (Point) o;
         return this.x == p.x && this.y == p.y;
     }
@@ -213,12 +222,12 @@ public class ColorPoint extends Point {
             return false;
         }
 
-        //o가 일반 Point이면 색상을 무시햐고 x,y정보만 비교한다.
+        // o가 일반 Point이면 색상을 무시햐고 x,y 정보만 비교한다.
         if (!(o instanceof ColorPoint)) {
             return o.equals(this);
         }
 
-        //o가 ColorPoint이면 색상까지 비교한다.
+        // o가 ColorPoint이면 색상까지 비교한다.
         return super.equals(o) && this.color == ((ColorPoint) o).color;
     }
 }
@@ -226,13 +235,13 @@ public class ColorPoint extends Point {
 
 ``` java
 void transitivityTest() {
-    ColorPoint a = new ColorPoint(1, 2, Color.RED);
-    Point b = new Point(1, 2);
-    ColorPoint c = new ColorPoint(1, 2, Color.BLUE);
+    ColorPoint a = new ColorPoint(2, 3, Color.RED);
+    Point b = new Point(2, 3);
+    ColorPoint c = new ColorPoint(2, 3, Color.BLUE);
 
-    System.out.println(a.equals(b)); //true
-    System.out.println(b.equals(c)); //true
-    System.out.println(a.equals(c)); //false
+    System.out.println(a.equals(b)); // true
+    System.out.println(b.equals(c)); // true
+    System.out.println(a.equals(c)); // false
 }
 ```
 
@@ -251,19 +260,19 @@ public class SmellPoint extends Point {
             return false;
         }
 
-        //o가 일반 Point이면 색상을 무시햐고 x,y정보만 비교한다.
+        // o가 일반 Point이면 색상을 무시햐고 x,y 정보만 비교한다.
         if (!(o instanceof SmellPoint)) {
             return o.equals(this);
         }
 
-        //o가 ColorPoint이면 색상까지 비교한다.
+        // o가 ColorPoint이면 색상까지 비교한다.
         return super.equals(o) && this.smell == ((SmellPoint) o).smell;
     }
 }
 
 void infinityTest() {
-    Point cp = new ColorPoint(1, 2, Color.RED);
-    Point sp = new SmellPoint(1, 2, Smell.SWEET);
+    Point cp = new ColorPoint(2, 3, Color.RED);
+    Point sp = new SmellPoint(2, 3, Smell.SWEET);
 
     System.out.println(cp.equals(sp));
 }
@@ -279,7 +288,8 @@ void infinityTest() {
 ``` java
 @Override
 public boolean equals(Object o) {
-    if(o == null || o.getClass() != this.getClass()) {
+    // getClass
+    if (o == null || o.getClass() != this.getClass()) {
         return false;
     }
 
@@ -302,6 +312,7 @@ public boolean equals(Object o) {
 
 ``` java
 public class ColorPoint2 {
+
     private Point point;
     private Color color;
 
@@ -348,7 +359,7 @@ void consistencyTest() throws MalformedURLException {
     URL url1 = new URL("www.xxx.com");
     URL url2 = new URL("www.xxx.com");
 
-    System.out.println(url1.equals(url2)); //?
+    System.out.println(url1.equals(url2)); // 항상 같지 않다.
 }
 ```
 
@@ -356,8 +367,7 @@ java.net.URL 클래스는 URL과 매핑된 host의 IP주소를 이용해 비교�
 도메인 주소라도 나오는 IP정보가 달라질 수 있기 때문에 반복적으로 호출할 경우 결과가
 달라질 수 있다. 
 
-따라서 이런 문제를 피하려면 equals는 항시 메모리에 존재하는 객체만을 사용한
-결정적 계산을 수행해야 한다.
+#### 따라서 이런 문제를 피하려면 equals는 항시 메모리에 존재하는 객체만을 사용한 결정적 계산을 수행해야 한다.
 
 <br>
 
