@@ -247,7 +247,7 @@ void transitivityTest() {
 
 <br>
 
-### 3-1. 추의성(무한 재귀)
+### 3-1. 추이성(무한 재귀)
 
 ``` java
 public class SmellPoint extends Point {
@@ -281,7 +281,7 @@ void infinityTest() {
 
 <br>
 
-### 3-2. 추의성(리스코프 치환 원칙)
+### 3-2. 추이성(리스코프 치환 원칙)
 
 만약 추이성을 지키기 위해서 Point의 equals를 각 클래스들을 getClass를 통해서 
 같은 구체 클래스일 경우에만 비교하도록 하면 어떨까?
@@ -306,7 +306,7 @@ public boolean equals(Object o) {
 
 <br>
 
-### 3-3 추의성(상속 대신 컴포지션(아이템 18)을 사용해라)
+### 3-3 추이성(상속 대신 컴포지션(아이템 18)을 사용해라)
 
 [상속 대신 컴포지션을 사용해라(아이템 18) By 루키](https://github.com/woowacourse-study/2022-effective-java/blob/main/04%EC%9E%A5/%EC%95%84%EC%9D%B4%ED%85%9C18/%EC%95%84%EC%9D%B4%ED%85%9C18-%EC%83%81%EC%86%8D%EB%B3%B4%EB%8B%A4%EB%8A%94_%EC%BB%B4%ED%8F%AC%EC%A7%80%EC%85%98%EC%9D%84_%EC%82%AC%EC%9A%A9%ED%95%98%EB%9D%BC.md)
 
@@ -338,7 +338,7 @@ public class ColorPoint2 {
 
 <br>
 
-### 3-4 추의성(추상 클래스)
+### 3-4 추이성(추상 클래스)
 
     추상 클레스의 하위 클래스에서라면 equals의 규약을 지키면서도 값을 추가할 수 있다.
 
