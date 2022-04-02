@@ -15,7 +15,7 @@
 
 ### Serializable을 구현하면 캡슐화가 깨진다.
 
-Serializable을 사용한 기본 직렬화 형태에서는 private, package-private 수준의 필드마저도 API로 공개가 된다. 즉, 캡슐화가 깨져버리게 된다.
+`Serializable`을 사용한 기본 직렬화 형태에서는 `private`, `package-private` 수준의 필드마저도 API로 공개가 된다. 즉, 캡슐화가 깨져버리게 된다.
 
 예시 코드를 통해서 한번 살펴보자.
 
@@ -28,7 +28,7 @@ Serializable을 사용한 기본 직렬화 형태에서는 private, package-priv
 
 <img width="1090" alt="스크린샷 2022-04-02 오후 9 39 20" src="https://user-images.githubusercontent.com/48710213/161384769-12d438b0-618d-403c-b50d-5d7c0e6707ba.png">
 
-위의 코드 내용을 살펴보면 분명 private으로 설정한 필드인 name과 type이 노출되는 것을 확인할 수 있다. 즉, 앞서서 말한 것처럼 캡슐화가 깨진다고 할 수 있다.
+위의 코드 내용을 살펴보면 분명 `private`으로 설정한 필드인 `name`과 `type`이 노출되는 것을 확인할 수 있다. 즉, 앞서서 말한 것처럼 캡슐화가 깨진다고 할 수 있다.
 
 <br>
 
@@ -66,7 +66,7 @@ Serializable을 사용한 기본 직렬화 형태에서는 private, package-priv
 
 <img width="1054" alt="스크린샷 2022-04-02 오후 9 53 00" src="https://user-images.githubusercontent.com/48710213/161384895-e4d41a2c-0867-45e6-ae90-76e6393c9d7e.png">
 
-역직렬화는 실패하지 않지만 필드가 변경됨으로 인해 정보를 가져오지 않아 NULL 값을 들고 오게 된다.
+역직렬화는 실패하지 않지만 필드가 변경됨으로 인해 정보를 가져오지 않아 `NULL` 값을 들고 오게 된다.
 
 <br>
 
@@ -89,7 +89,7 @@ Serializable을 사용한 기본 직렬화 형태에서는 private, package-priv
 
 <br>
 
-자바 직렬화는 분명 충분히 고려를 하고 사용해야 한다.
+자바 직렬화는 되도록 사용하지 않거나 매우 충분히 고려를 하고 사용해야 한다.
 
 그래도 정말 직렬화를 정말 사용하고 싶으면 다음과 같은 상황에서만 직렬화를 사용하는 것을 추천한다.
 
