@@ -72,7 +72,11 @@
 
 또 필드 타입이 변경된 상태에서 역직렬화를 수행하면 어떻게 될까??
 
+<img width="624" alt="스크린샷 2022-04-02 오후 10 38 00" src="https://user-images.githubusercontent.com/48710213/161385858-fd40d63d-a431-45ab-8291-c55ecdd267a0.png">
+
 이렇게 기존에 존재하는 타입을 타입으로 변경했다. 이 상황에서 역직렬화를 하면 `java.io.InvalidClassException` 또는 `java.lang.ClassCastException`이 발생한다.
+
+<img width="1153" alt="스크린샷 2022-04-02 오후 10 37 05" src="https://user-images.githubusercontent.com/48710213/161385818-a114c74e-0b88-431f-9686-2319ea187387.png">
 
 <img width="1334" alt="스크린샷 2022-04-02 오후 9 55 57" src="https://user-images.githubusercontent.com/48710213/161384939-7f48cb69-5b8c-4f7a-9902-34108ddcda93.png">
 
