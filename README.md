@@ -11,7 +11,7 @@
 - [x] 5. [자원을 직접 명시하지 말고 의존 객체 주입을 사용하라](https://github.com/woowacourse-study/2022-effective-java/blob/main/02%EC%9E%A5/%EC%95%84%EC%9D%B4%ED%85%9C_05/%EC%9E%90%EC%9B%90%EC%9D%84%20%EC%A7%81%EC%A0%91%20%EB%AA%85%EC%8B%9C%ED%95%98%EC%A7%80%20%EB%A7%90%EA%B3%A0%20%EC%9D%98%EC%A1%B4%20%EA%B0%9D%EC%B2%B4%20%EC%A3%BC%EC%9E%85%EC%9D%84%20%EC%82%AC%EC%9A%A9%ED%95%98%EB%9D%BC.md)	(매트)
 - [x] 6. [불필요한 객체 생성을 피하라](https://github.com/Wishoon/effective-java/blob/rookie/02%EC%9E%A5/%EC%95%84%EC%9D%B4%ED%85%9C_06/%EB%B6%88%ED%95%84%EC%9A%94%ED%95%9C%20%EA%B0%9D%EC%B2%B4%20%EC%83%9D%EC%84%B1%EC%9D%84%20%ED%94%BC%ED%95%98%EB%9D%BC.md) (루키)	
 - [x] 7. [다 쓴 객체 참조를 해제하라](https://github.com/injoon2019/2022-effective-java/blob/item07/02%EC%9E%A5/%EC%95%84%EC%9D%B4%ED%85%9C_07/%EB%8B%A4_%EC%93%B4_%EA%B0%9D%EC%B2%B4_%EC%B0%B8%EC%A1%B0%EB%A5%BC_%ED%95%B4%EC%A0%9C%ED%95%98%EB%9D%BC.md) (토르)
-- [ ] 8. finalizer와 cleaner 사용을 피하라	
+- [x] 8. finalizer와 cleaner 사용을 피하라	(호호)
 - [x] 9. [try-finally보다는 try-with-resources를 사용하라](https://github.com/Ohzzi/effective-java/blob/main/02%EC%9E%A5/%EC%95%84%EC%9D%B4%ED%85%9C_09/try-finally%EB%B3%B4%EB%8B%A4%EB%8A%94_try-with-resources%EB%A5%BC_%EC%82%AC%EC%9A%A9%ED%95%98%EB%9D%BC.md) (오찌)	
 - [x] 10. [equals는 일반 규약을 지켜 재정의하라](https://github.com/woowacourse-study/2022-effective-java/blob/main/03%EC%9E%A5/%EC%95%84%EC%9D%B4%ED%85%9C_10/equals%EB%8A%94_%EC%9D%BC%EB%B0%98_%EA%B7%9C%EC%95%BD%EC%9D%84_%EC%A7%80%EC%BC%9C_%EC%9E%AC%EC%A0%95%EC%9D%98%ED%95%98%EB%9D%BC.md)	(티키)
 - [x] 11. [equals를 재정의하려거든 hashCode도 재정의하라](https://github.com/woowacourse-study/2022-effective-java/blob/main/03%EC%9E%A5/%EC%95%84%EC%9D%B4%ED%85%9C_11/equals%EB%A5%BC_%EC%9E%AC%EC%A0%95%EC%9D%98%ED%95%98%EB%A0%A4%EA%B1%B0%EB%93%A0_hashCode%EB%8F%84_%EC%9E%AC%EC%A0%95%EC%9D%98%ED%95%98%EB%9D%BC.md)	(에덴)
@@ -35,10 +35,10 @@
 - [x] 29. [이왕이면 제네릭 타입으로 만들라](https://github.com/woowacourse-study/2022-effective-java/pull/73) (오찌) 	
 - [x] 30. [이왕이면 제네릭 메서드로 만들라](https://github.com/woowacourse-study/2022-effective-java/pull/85) (오찌)
 - [x] 31. [한정적 와일드카드를 사용해 API 유연성을 높이라](./05장/아이템_31/한정적%20와일드카드를%20사용해%20API%20유연성을%20높이라.md) (루키) 
-- [ ] 32. 제네릭과 가변인수를 함께 쓸 때는 신중하라	
+- [x] 32. 제네릭과 가변인수를 함께 쓸 때는 신중하라	(오찌)
 - [ ] 33. 타입 안전 이종 컨테이너를 고려하라	
 - [x] 34. [int 상수 대신 열거 타입을 사용하라](https://github.com/woowacourse-study/2022-effective-java/blob/main/06%EC%9E%A5/%EC%95%84%EC%9D%B4%ED%85%9C34/%EC%9D%B4%ED%8E%99%ED%8B%B0%EB%B8%8C_%EC%9E%90%EB%B0%94_%EC%95%8C%ED%8C%8C_34.pdf) (알파)
-- [ ] 35. ordinal 메서드 대신 인스턴스 필드를 사용하라	
+- [x] 35. ordinal 메서드 대신 인스턴스 필드를 사용하라 (토르)
 - [ ] 36. 비트 필드 대신 EnumSet을 사용하라	
 - [x] 37. [ordinal 인덱싱 대신 EnumMap을 사용하라](https://github.com/woowacourse-study/2022-effective-java/blob/main/06%EC%9E%A5/%EC%95%84%EC%9D%B4%ED%85%9C_37/ordinal_%EC%9D%B8%EB%8D%B1%EC%8B%B1_%EB%8C%80%EC%8B%A0_EnumMap%EC%9D%84_%EC%82%AC%EC%9A%A9%ED%95%98%EB%9D%BC.md)	(티키)
 - [x] 38. [확장할 수 있는 열거 타입이 필요하면 인터페이스를 사용하라](https://github.com/bcc0830/2022-effective-java/blob/main/06%EC%9E%A5/%EC%95%84%EC%9D%B4%ED%85%9C_38/%EC%9D%B4%ED%8E%99%ED%8B%B0%EB%B8%8C_%EC%9E%90%EB%B0%94_%EC%95%8C%ED%8C%8C_38.pdf) (알파)
@@ -50,12 +50,12 @@
 - [x] 44. [표준 함수형 인터페이스를 사용하라](https://github.com/woowacourse-study/2022-effective-java/blob/main/07%EC%9E%A5/%EC%95%84%EC%9D%B4%ED%85%9C_44/%ED%91%9C%EC%A4%80_%ED%95%A8%EC%88%98%ED%98%95_%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4%EB%A5%BC_%EC%82%AC%EC%9A%A9%ED%95%B4%EB%9D%BC.md) (티키)
 - [x] 45. [스트림은 주의해서 사용하라](https://github.com/woowacourse-study/2022-effective-java/blob/main/07%EC%9E%A5/%EC%95%84%EC%9D%B4%ED%85%9C_45/%EC%8A%A4%ED%8A%B8%EB%A6%BC%EC%9D%80_%EC%A3%BC%EC%9D%98%ED%95%B4%EC%84%9C_%EC%82%AC%EC%9A%A9%ED%95%98%EB%9D%BC.md)	(야호)
 - [x] 46. [스트림에서는 부작용 없는 함수를 사용하라](https://github.com/woowacourse-study/2022-effective-java/blob/main/07%EC%9E%A5/%EC%95%84%EC%9D%B4%ED%85%9C_46/%EC%8A%A4%ED%8A%B8%EB%A6%BC%EC%97%90%EC%84%9C%EB%8A%94_%EB%B6%80%EC%9E%91%EC%9A%A9%EC%97%86%EB%8A%94_%ED%95%A8%EC%88%98%EB%A5%BC_%EC%82%AC%EC%9A%A9%ED%95%98%EB%9D%BC.md) (후니)
-- [ ] 47. 반환 타입으로는 스트림보다 컬렉션이 낫다	
+- [x] 47. 반환 타입으로는 스트림보다 컬렉션이 낫다	(연로그)
 - [ ] 48. 스트림 병렬화는 주의해서 적용하라	
 - [x] 49. [매개변수가 유효한지 검사하라](https://github.com/woowacourse-study/2022-effective-java/pull/70) (연로그)	
 - [x] 50. [적시에 방어적 복사본을 만들라](https://github.com/pup-paw/2022-effective-java/blob/main/08%EC%9E%A5/%EC%95%84%EC%9D%B4%ED%85%9C_50/%EC%A0%81%EC%8B%9C%EC%97%90_%EB%B0%A9%EC%96%B4%EC%A0%81_%EB%B3%B5%EC%82%AC%EB%B3%B8%EC%9D%84_%EB%A7%8C%EB%93%A4%EB%9D%BC.md) (야호)	
 - [x] 51. [메서드 시그니처를 신중히 설계하라](https://github.com/yh20studio/effective-java/blob/tiki/08%EC%9E%A5/%EC%95%84%EC%9D%B4%ED%85%9C_51/%EB%A9%94%EC%84%9C%EB%93%9C_%EC%8B%9C%EA%B7%B8%EB%8B%88%EC%B2%98%EB%A5%BC_%EC%8B%A0%EC%A4%91%ED%9E%88_%EC%84%A4%EA%B3%84%ED%95%98%EB%9D%BC.md) (티키)
-- [ ] 52. 다중정의는 신중히 사용하라	
+- [x] 52. 다중정의는 신중히 사용하라 (알파)
 - [x] 53. [가변인수는 신중히 사용하라](https://github.com/jayjaehunchoi/effective-java/blob/huni/08%EC%9E%A5/%EC%95%84%EC%9D%B4%ED%85%9C_53/README.md) (후니)	
 - [x] 54. [null이 아닌, 빈 컬렉션이나 배열을 반환하라](https://github.com/woowacourse-study/2022-effective-java/blob/main/08%EC%9E%A5/%EC%95%84%EC%9D%B4%ED%85%9C_54/null%EC%9D%B4_%EC%95%84%EB%8B%8C_%EB%B9%88_%EC%BB%AC%EB%A0%89%EC%85%98%EC%9D%B4%EB%82%98_%EB%B0%B0%EC%97%B4%EC%9D%84_%EB%B0%98%ED%99%98%ED%95%98%EB%9D%BC.md) (호호)
 - [x] 55. [옵셔널 반환은 신중히 하라](https://github.com/woowacourse-study/2022-effective-java/blob/main/08%EC%9E%A5/%EC%95%84%EC%9D%B4%ED%85%9C_55/%EC%98%B5%EC%85%94%EB%84%90_%EB%B0%98%ED%99%98%EC%9D%80_%EC%8B%A0%EC%A4%91%ED%9E%88_%ED%95%98%EB%9D%BC.md) (호호)	
@@ -69,7 +69,7 @@
 - [x] 63. [문자열 연결은 느리니 주의하라](https://github.com/woowacourse-study/2022-effective-java/pull/75) (알파)	
 - [x] 64. [객체는 인터페이스를 사용해 참조하라](https://github.com/jayjaehunchoi/effective-java/blob/huni/09%EC%9E%A5/%EC%95%84%EC%9D%B4%ED%85%9C_64/%EA%B0%9D%EC%B2%B4%EB%8A%94_%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4%EB%A5%BC_%EC%82%AC%EC%9A%A9%ED%95%B4_%EC%B0%B8%EC%A1%B0%ED%95%98%EB%9D%BC.pdf) (후니)
 - [x] 65. [리플렉션보다는 인터페이스를 사용하라](https://github.com/woowacourse-study/2022-effective-java/pull/71) (에덴)
-- [ ] 66. 네이티브 메서드는 신중히 사용하라	
+- [x] 66. 네이티브 메서드는 신중히 사용하라 (에덴)
 - [ ] 67. 최적화는 신중히 하라	
 - [ ] 68. 일반적으로 통용되는 명명 규칙을 따르라
 - [x] 69. 예외는 진짜 예외 상황에만 사용하라 (호호)
