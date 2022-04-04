@@ -59,7 +59,7 @@ public static void main(String[] args) {
 ```
 
 ### EnumSet 이 아닌 Set 을 받는 이유
-
+[아이템 64 - 후니](https://github.com/jayjaehunchoi/effective-java/blob/huni/09%EC%9E%A5/%EC%95%84%EC%9D%B4%ED%85%9C_64/%EA%B0%9D%EC%B2%B4%EB%8A%94_%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4%EB%A5%BC_%EC%82%AC%EC%9A%A9%ED%95%B4_%EC%B0%B8%EC%A1%B0%ED%95%98%EB%9D%BC.pdf)
 ＞ applyStyles 메서드가 EnumSet\<Style>이 아닌 Set\<Style>을 받은 것은 다형성 때문
 
     모든 클라이언트가 EnumSet을 건네리라 짐작되는 상황이라도 이왕이면 인터페이스로 받는 게 일반적으로 좋은 습관임
@@ -71,7 +71,7 @@ public static void main(String[] args) {
 
 ＞ Set 인터페이스를 완벽히 구현하며, 타입 안전하고, 다른 어떤 Set 구현체와도 함께 사용할 수 있음
 
-＞ removeAll과 retainAll 같은 대량 작업은 (비트 필드를 사용할 때 쓰는 것과 같은) 비트를 효율적으로 처리할 수 있는 산술 연산을 써서 구현함
+＞ removeAll(차집합)과 retainAll(교집합)같은 대량 작업은 비트를 효율적으로 처리할 수 있는 산술 연산(비트 필드를 사용할 때 쓰는 것과 같은)을 써서 구현함
 
 ＞ 난해한 작업들은 EnumSet이 다 처리해주기 때문에 비트를 직접 다룰 때 겪는 흔한 오류들로부터 해방됨
 
