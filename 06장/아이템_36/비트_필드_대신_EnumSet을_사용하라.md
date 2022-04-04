@@ -59,7 +59,7 @@ public static void main(String[] args) {
 ```
 
 ### EnumSet 이 아닌 Set 을 받는 이유
-[아이템 64 - 후니](https://github.com/jayjaehunchoi/effective-java/blob/huni/09%EC%9E%A5/%EC%95%84%EC%9D%B4%ED%85%9C_64/%EA%B0%9D%EC%B2%B4%EB%8A%94_%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4%EB%A5%BC_%EC%82%AC%EC%9A%A9%ED%95%B4_%EC%B0%B8%EC%A1%B0%ED%95%98%EB%9D%BC.pdf)
+[아이템 64 - 후니](https://github.com/jayjaehunchoi/effective-java/blob/huni/09%EC%9E%A5/%EC%95%84%EC%9D%B4%ED%85%9C_64/%EA%B0%9D%EC%B2%B4%EB%8A%94_%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4%EB%A5%BC_%EC%82%AC%EC%9A%A9%ED%95%B4_%EC%B0%B8%EC%A1%B0%ED%95%98%EB%9D%BC.pdf)  
 ＞ applyStyles 메서드가 EnumSet\<Style>이 아닌 Set\<Style>을 받은 것은 다형성 때문
 
     모든 클라이언트가 EnumSet을 건네리라 짐작되는 상황이라도 이왕이면 인터페이스로 받는 게 일반적으로 좋은 습관임
