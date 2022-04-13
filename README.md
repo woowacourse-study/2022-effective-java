@@ -1,98 +1,99 @@
 ## [Effective Java 3/E 스터디]
 
 ### 일정
-22.02.22. ~ 레벨 1 종료 시 까지
+22.02.22. ~ 22.04.05 (레벨 1 기간)
 
 ### 목록
-- [x] 1. [생성자 대신 정적 팩터리 메서드를 고려하라](https://github.com/woowacourse-study/2022-effective-java/blob/main/02%EC%9E%A5/%EC%95%84%EC%9D%B4%ED%85%9C_01/%EC%83%9D%EC%84%B1%EC%9E%90_%EB%8C%80%EC%8B%A0_%EC%A0%95%EC%A0%81_%ED%8C%A9%ED%84%B0%EB%A6%AC_%EB%A9%94%EC%84%9C%EB%93%9C%EB%A5%BC_%EA%B3%A0%EB%A0%A4%ED%95%98%EB%9D%BC.md) (토르)
-- [x] 2. [생성자에 매개변수가 많다면 빌더를 고려하라](https://aeno.notion.site/2-2376ab244be047ec9678f2950247da82) (호호)
-- [x] 3. [private 생성자나 열거 타입으로 싱글턴임을 보증하라](https://github.com/woowacourse-study/2022-effective-java/blob/main/02%EC%9E%A5/%EC%95%84%EC%9D%B4%ED%85%9C_03/private_%EC%83%9D%EC%84%B1%EC%9E%90%EB%82%98_%EC%97%B4%EA%B1%B0_%ED%83%80%EC%9E%85%EC%9C%BC%EB%A1%9C_%EC%8B%B1%EA%B8%80%ED%84%B4%EC%9E%84%EC%9D%84_%EB%B3%B4%EC%A6%9D%ED%95%98%EB%9D%BC.md) (야호)
-- [x] 4. [인스턴스화를 막으려거든 private 생성자를 사용하라](https://github.com/woowacourse-study/2022-effective-java/blob/main/02%EC%9E%A5/%EC%95%84%EC%9D%B4%ED%85%9C_04/%EC%9D%B8%EC%8A%A4%ED%84%B4%EC%8A%A4%ED%99%94%EB%A5%BC%20%EB%A7%89%EA%B8%B0%20%EC%9C%84%ED%95%B4%20private%20%EC%83%9D%EC%84%B1%EC%9E%90%20%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0.md)	(연로그)
-- [x] 5. [자원을 직접 명시하지 말고 의존 객체 주입을 사용하라](https://github.com/woowacourse-study/2022-effective-java/blob/main/02%EC%9E%A5/%EC%95%84%EC%9D%B4%ED%85%9C_05/%EC%9E%90%EC%9B%90%EC%9D%84%20%EC%A7%81%EC%A0%91%20%EB%AA%85%EC%8B%9C%ED%95%98%EC%A7%80%20%EB%A7%90%EA%B3%A0%20%EC%9D%98%EC%A1%B4%20%EA%B0%9D%EC%B2%B4%20%EC%A3%BC%EC%9E%85%EC%9D%84%20%EC%82%AC%EC%9A%A9%ED%95%98%EB%9D%BC.md)	(매트)
-- [x] 6. [불필요한 객체 생성을 피하라](https://github.com/woowacourse-study/2022-effective-java/blob/main/02%EC%9E%A5/%EC%95%84%EC%9D%B4%ED%85%9C_06/%EB%B6%88%ED%95%84%EC%9A%94%ED%95%9C%20%EA%B0%9D%EC%B2%B4%20%EC%83%9D%EC%84%B1%EC%9D%84%20%ED%94%BC%ED%95%98%EB%9D%BC.md) (루키)	
-- [x] 7. [다 쓴 객체 참조를 해제하라](https://github.com/woowacourse-study/2022-effective-java/blob/main/02%EC%9E%A5/%EC%95%84%EC%9D%B4%ED%85%9C_07/%EB%8B%A4_%EC%93%B4_%EA%B0%9D%EC%B2%B4_%EC%B0%B8%EC%A1%B0%EB%A5%BC_%ED%95%B4%EC%A0%9C%ED%95%98%EB%9D%BC.md) (토르)
-- [x] 8. [finalizer와 cleaner 사용을 피하라](https://github.com/woowacourse-study/2022-effective-java/blob/main/02%EC%9E%A5/%EC%95%84%EC%9D%B4%ED%85%9C_08/finalizer%EC%99%80_cleaner_%EC%82%AC%EC%9A%A9%EC%9D%84%20%ED%94%BC%ED%95%98%EB%9D%BC.md)	(호호)
-- [x] 9. [try-finally보다는 try-with-resources를 사용하라](https://github.com/Ohzzi/effective-java/blob/main/02%EC%9E%A5/%EC%95%84%EC%9D%B4%ED%85%9C_09/try-finally%EB%B3%B4%EB%8B%A4%EB%8A%94_try-with-resources%EB%A5%BC_%EC%82%AC%EC%9A%A9%ED%95%98%EB%9D%BC.md) (오찌)	
-- [x] 10. [equals는 일반 규약을 지켜 재정의하라](https://github.com/woowacourse-study/2022-effective-java/blob/main/03%EC%9E%A5/%EC%95%84%EC%9D%B4%ED%85%9C_10/equals%EB%8A%94_%EC%9D%BC%EB%B0%98_%EA%B7%9C%EC%95%BD%EC%9D%84_%EC%A7%80%EC%BC%9C_%EC%9E%AC%EC%A0%95%EC%9D%98%ED%95%98%EB%9D%BC.md)	(티키)
-- [x] 11. [equals를 재정의하려거든 hashCode도 재정의하라](https://github.com/woowacourse-study/2022-effective-java/blob/main/03%EC%9E%A5/%EC%95%84%EC%9D%B4%ED%85%9C_11/equals%EB%A5%BC_%EC%9E%AC%EC%A0%95%EC%9D%98%ED%95%98%EB%A0%A4%EA%B1%B0%EB%93%A0_hashCode%EB%8F%84_%EC%9E%AC%EC%A0%95%EC%9D%98%ED%95%98%EB%9D%BC.md)	(에덴)
-- [x] 12. [toString을 항상 재정의하라](https://github.com/woowacourse-study/2022-effective-java/blob/main/03%EC%9E%A5/%EC%95%84%EC%9D%B4%ED%85%9C_12/toString%EC%9D%84%20%ED%95%AD%EC%83%81%20%EC%9E%AC%EC%A0%95%EC%9D%98%ED%95%98%EB%9D%BC.md) (썬)
-- [ ] 13. clone 재정의는 주의해서 진행하라	
-- [x] 14. [Comparable을 구현할지 고려하라](https://github.com/woowacourse-study/2022-effective-java/blob/main/03%EC%9E%A5/%EC%95%84%EC%9D%B4%ED%85%9C_14/Comparable%EC%9D%84_%EA%B5%AC%ED%98%84%ED%95%A0%EC%A7%80_%EA%B3%A0%EB%A0%A4%ED%95%98%EB%9D%BC.pdf) (오찌)
-- [x] 15. [클래스와 멤버의 접근 권한을 최소화하라](https://github.com/woowacourse-study/2022-effective-java/blob/main/04%EC%9E%A5/%EC%95%84%EC%9D%B4%ED%85%9C_15/%ED%81%B4%EB%9E%98%EC%8A%A4%EC%99%80%20%EB%A9%A4%EB%B2%84%20%EC%A0%91%EA%B7%BC%EA%B6%8C%ED%95%9C%20%EC%B5%9C%EC%86%8C%ED%99%94%ED%95%98%EA%B8%B0.md) (연로그)
+
+- [x] 1. [생성자 대신 정적 팩터리 메서드를 고려하라](./02장/아이템_01/생성자_대신_정적_팩터리_메서드를_고려하라.md) (토르)
+- [x] 2. [생성자에 매개변수가 많다면 빌더를 고려하라](./02장/아이템_02/생성자에_매개변수가_많다면_빌더를_고려하라.md) (호호)
+- [x] 3. [private 생성자나 열거 타입으로 싱글턴임을 보증하라](./02장/아이템_03/private_생성자나_열거_타입으로_싱글턴임을_보증하라.md) (야호)
+- [x] 4. [인스턴스화를 막으려거든 private 생성자를 사용하라](./02장/아이템_04/인스턴스화를%20막기%20위해%20private%20생성자%20사용하기.md) (연로그)
+- [x] 5. [자원을 직접 명시하지 말고 의존 객체 주입을 사용하라](./02장/아이템_05/자원을%20직접%20명시하지%20말고%20의존%20객체%20주입을%20사용하라.md) (매트)
+- [x] 6. [불필요한 객체 생성을 피하라](./02장/아이템_06/불필요한%20객체%20생성을%20피하라.md) (루키)
+- [x] 7. [다 쓴 객체 참조를 해제하라](./02장/아이템_07/다_쓴_객체_참조를_해제하라.md) (토르)
+- [x] 8. [finalizer와 cleaner 사용을 피하라](./02장/아이템_08/finalizer와_cleaner_사용을%20피하라.md)	(호호)
+- [x] 9. [try-finally보다는 try-with-resources를 사용하라](./02장/아이템_09/try-finally보다는_try-with-resources를_사용하라.md) (오찌)
+- [x] 10. [equals는 일반 규약을 지켜 재정의하라](./03장/아이템_10/equals는_일반_규약을_지켜_재정의하라.md)	(티키)
+- [x] 11. [equals를 재정의하려거든 hashCode도 재정의하라](./03장/아이템_11/equals를_재정의하려거든_hashCode도_재정의하라.md)	(에덴)
+- [x] 12. [toString을 항상 재정의하라](./03장/아이템_12/toString을%20항상%20재정의하라.md) (썬)
+- [ ] 13. clone 재정의는 주의해서 진행하라
+- [x] 14. [Comparable을 구현할지 고려하라](./03장/아이템_14/Comparable을_구현할지_고려하라.pdf) (오찌)
+- [x] 15. [클래스와 멤버의 접근 권한을 최소화하라](./04장/아이템_15/클래스와%20멤버%20접근권한%20최소화하기.md) (연로그)
 - [x] 16. [public 클래스에서는 public 필드가 아닌 접근자 메서드를 사용하라](./04장/아이템_16/public_클래스에서는_public_필드가_아닌_접근자_메서드를_사용하라.md) (야호)
-- [x] 17. [변경 가능성을 최소화하라](https://github.com/woowacourse-study/2022-effective-java/blob/main/03%EC%9E%A5/%EC%95%84%EC%9D%B4%ED%85%9C_17/%EB%B3%80%EA%B2%BD_%EA%B0%80%EB%8A%A5%EC%84%B1%EC%9D%84_%EC%B5%9C%EC%86%8C%ED%99%94%ED%95%98%EB%9D%BC.pdf) (오찌)	
-- [x] 18. [상속보다는 컴포지션을 사용하라](https://github.com/woowacourse-study/2022-effective-java/blob/main/04%EC%9E%A5/%EC%95%84%EC%9D%B4%ED%85%9C_18/%EC%95%84%EC%9D%B4%ED%85%9C18-%EC%83%81%EC%86%8D%EB%B3%B4%EB%8B%A4%EB%8A%94_%EC%BB%B4%ED%8F%AC%EC%A7%80%EC%85%98%EC%9D%84_%EC%82%AC%EC%9A%A9%ED%95%98%EB%9D%BC.md)	(루키)
-- [x] 19. [상속을 고려해 설계하고 문서화하라. 그러지 않았다면 상속을 금지하라.](https://github.com/woowacourse-study/2022-effective-java/blob/main/04%EC%9E%A5/%EC%95%84%EC%9D%B4%ED%85%9C_19/%EC%95%84%EC%9D%B4%ED%85%9C19-%EC%83%81%EC%86%8D_%EA%B8%88%EC%A7%80.md) (연로그)
-- [x] 20. [추상 클래스보다는 인터페이스를 우선하라](https://github.com/woowacourse-study/2022-effective-java/blob/main/04%EC%9E%A5/%EC%95%84%EC%9D%B4%ED%85%9C_20/%EC%95%84%EC%9D%B4%ED%85%9C20-%EC%B6%94%EC%83%81-%ED%81%B4%EB%9E%98%EC%8A%A4%EB%B3%B4%EB%8B%A4%EB%8A%94-%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4%EB%A5%BC-%EC%9A%B0%EC%84%A0%ED%95%98%EB%9D%BC.md)	(에덴)
-- [x] 21. [인터페이스는 구현하는 쪽을 생각해 설계하라](https://github.com/woowacourse-study/2022-effective-java/blob/main/04%EC%9E%A5/%EC%95%84%EC%9D%B4%ED%85%9C_21/%EC%9D%B4%ED%8E%99%ED%8B%B0%EB%B8%8C_%EC%9E%90%EB%B0%94_%EC%95%8C%ED%8C%8C_21.pdf) (알파)	
-- [x] 22. [인터페이스는 타입을 정의하는 용도로만 사용하라](https://github.com/woowacourse-study/2022-effective-java/blob/main/04%EC%9E%A5/%EC%95%84%EC%9D%B4%ED%85%9C_22/%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4%EB%8A%94%20%ED%83%80%EC%9E%85%EC%9D%84%20%EC%A0%95%EC%9D%98%ED%95%98%EB%8A%94%20%EC%9A%A9%EB%8F%84%EB%A1%9C%EB%A7%8C%20%EC%82%AC%EC%9A%A9%ED%95%98%EB%9D%BC.md) (썬)	
+- [x] 17. [변경 가능성을 최소화하라](./04장/아이템_17/변경_가능성을_최소화하라.pdf) (오찌)
+- [x] 18. [상속보다는 컴포지션을 사용하라](./04장/아이템_18/아이템18-상속보다는_컴포지션을_사용하라.md)	(루키)
+- [x] 19. [상속을 고려해 설계하고 문서화하라. 그러지 않았다면 상속을 금지하라.](./04장/아이템_19/아이템19-상속_금지.md) (연로그)
+- [x] 20. [추상 클래스보다는 인터페이스를 우선하라](./04장/아이템_20/아이템20-추상-클래스보다는-인터페이스를-우선하라.md)	(에덴)
+- [x] 21. [인터페이스는 구현하는 쪽을 생각해 설계하라](./04장/아이템_21/이펙티브_자바_알파_21.pdf) (알파)
+- [x] 22. [인터페이스는 타입을 정의하는 용도로만 사용하라](./04장/아이템_22/인터페이스는%20타입을%20정의하는%20용도로만%20사용하라.md) (썬)
 - [x] 23. [태그 달린 클래스보다는 클래스 계층구조를 활용하라](./04장/아이템_23/태그_달린_클래스보다는_클래스_계층구조를_활용하라.md)	(티키)
-- [x] 24. [멤버 클래스는 되도록 static으로 만들라](https://github.com/yeon-06/effective-java/blob/item24/04%EC%9E%A5/%EC%95%84%EC%9D%B4%ED%85%9C_24/%EB%A9%A4%EB%B2%84%20%ED%81%B4%EB%9E%98%EC%8A%A4%EB%8A%94%20%EB%90%98%EB%8F%84%EB%A1%9D%20static%EC%9C%BC%EB%A1%9C%20%EB%A7%8C%EB%93%A4%EC%96%B4%EB%9D%BC.md) (연로그)
-- [x] 25. [톱레벨 클래스는 한 파일에 하나만 담으라](https://github.com/woowacourse-study/2022-effective-java/blob/main/04%EC%9E%A5/%EC%95%84%EC%9D%B4%ED%85%9C_25/%ED%86%B1%EB%A0%88%EB%B2%A8_%ED%81%B4%EB%9E%98%EC%8A%A4%EB%8A%94_%ED%95%9C_%ED%8C%8C%EC%9D%BC%EC%97%90_%ED%95%98%EB%82%98%EB%A7%8C_%EB%8B%B4%EC%9C%BC%EB%9D%BC.md) (티키)	
-- [x] 26. [로 타입은 사용하지 말라](https://github.com/woowacourse-study/2022-effective-java/blob/main/05%EC%9E%A5/%EC%95%84%EC%9D%B4%ED%85%9C_26/%EB%A1%9C%20%ED%83%80%EC%9E%85%EC%9D%80%20%EC%82%AC%EC%9A%A9%ED%95%98%EC%A7%80%20%EB%A7%90%EB%9D%BC.md) (루키)
-- [ ] 27. 비검사 경고를 제거하라	
-- [x] 28. [배열보다는 리스트를 사용하라](https://github.com/woowacourse-study/2022-effective-java/blob/main/05%EC%9E%A5/%EC%95%84%EC%9D%B4%ED%85%9C_28/%EB%B0%B0%EC%97%B4%EB%B3%B4%EB%8B%A4%EB%8A%94_%EB%A6%AC%EC%8A%A4%ED%8A%B8%EB%A5%BC_%EC%82%AC%EC%9A%A9%ED%95%98%EB%9D%BC.md) (토르)	
-- [x] 29. [이왕이면 제네릭 타입으로 만들라](https://github.com/woowacourse-study/2022-effective-java/blob/main/05%EC%9E%A5/%EC%95%84%EC%9D%B4%ED%85%9C_29/%EC%9D%B4%EC%99%95%EC%9D%B4%EB%A9%B4%20%EC%A0%9C%EB%84%A4%EB%A6%AD%20%ED%83%80%EC%9E%85%EC%9C%BC%EB%A1%9C%20%EB%A7%8C%EB%93%A4%EB%9D%BC.pdf) (오찌) 	
-- [x] 30. [이왕이면 제네릭 메서드로 만들라](https://github.com/woowacourse-study/2022-effective-java/blob/main/05%EC%9E%A5/%EC%95%84%EC%9D%B4%ED%85%9C_30/%EC%9D%B4%EC%99%95%EC%9D%B4%EB%A9%B4_%EC%A0%9C%EB%84%A4%EB%A6%AD_%EB%A9%94%EC%84%9C%EB%93%9C%EB%A1%9C_%EB%A7%8C%EB%93%A4%EB%9D%BC.md) (오찌)
-- [x] 31. [한정적 와일드카드를 사용해 API 유연성을 높이라](./05장/아이템_31/한정적%20와일드카드를%20사용해%20API%20유연성을%20높이라.md) (루키) 
-- [x] 32. [제네릭과 가변인수를 함께 쓸 때는 신중하라](https://github.com/woowacourse-study/2022-effective-java/blob/main/05%EC%9E%A5/%EC%95%84%EC%9D%B4%ED%85%9C_32/%EC%A0%9C%EB%84%A4%EB%A6%AD%EA%B3%BC_%EA%B0%80%EB%B3%80%EC%9D%B8%EC%88%98%EB%A5%BC_%ED%95%A8%EA%BB%98_%EC%93%B8_%EB%95%8C%EB%8A%94_%EC%8B%A0%EC%A4%91%ED%95%98%EB%9D%BC.pdf)	(오찌)
-- [ ] 33. 타입 안전 이종 컨테이너를 고려하라	
-- [x] 34. [int 상수 대신 열거 타입을 사용하라](https://github.com/woowacourse-study/2022-effective-java/blob/main/06%EC%9E%A5/%EC%95%84%EC%9D%B4%ED%85%9C_34/%EC%9D%B4%ED%8E%99%ED%8B%B0%EB%B8%8C_%EC%9E%90%EB%B0%94_%EC%95%8C%ED%8C%8C_34.pdf) (알파)
-- [x] 35. [ordinal 메서드 대신 인스턴스 필드를 사용하라](https://github.com/woowacourse-study/2022-effective-java/blob/main/06%EC%9E%A5/%EC%95%84%EC%9D%B4%ED%85%9C_35/ordinal_%EB%A9%94%EC%84%9C%EB%93%9C_%EB%8C%80%EC%8B%A0_%EC%9D%B8%EC%8A%A4%ED%84%B4%EC%8A%A4_%ED%95%84%EB%93%9C%EB%A5%BC_%EC%82%AC%EC%9A%A9%ED%95%98%EB%9D%BC.md) (토르)
-- [x] 36. [비트 필드 대신 EnumSet을 사용하라](https://github.com/woowacourse-study/2022-effective-java/blob/main/06%EC%9E%A5/%EC%95%84%EC%9D%B4%ED%85%9C_36/%EB%B9%84%ED%8A%B8_%ED%95%84%EB%93%9C_%EB%8C%80%EC%8B%A0_EnumSet%EC%9D%84_%EC%82%AC%EC%9A%A9%ED%95%98%EB%9D%BC.md)	
-- [x] 37. [ordinal 인덱싱 대신 EnumMap을 사용하라](https://github.com/woowacourse-study/2022-effective-java/blob/main/06%EC%9E%A5/%EC%95%84%EC%9D%B4%ED%85%9C_37/ordinal_%EC%9D%B8%EB%8D%B1%EC%8B%B1_%EB%8C%80%EC%8B%A0_EnumMap%EC%9D%84_%EC%82%AC%EC%9A%A9%ED%95%98%EB%9D%BC.md)	(티키)
-- [x] 38. [확장할 수 있는 열거 타입이 필요하면 인터페이스를 사용하라](https://github.com/woowacourse-study/2022-effective-java/blob/main/06%EC%9E%A5/%EC%95%84%EC%9D%B4%ED%85%9C_38/%EC%9D%B4%ED%8E%99%ED%8B%B0%EB%B8%8C_%EC%9E%90%EB%B0%94_%EC%95%8C%ED%8C%8C_38.pdf) (알파)
-- [ ] 39. 명명 패턴보다 애너테이션을 사용하라	
+- [x] 24. [멤버 클래스는 되도록 static으로 만들라](./04장/아이템_24/멤버%20클래스는%20되도록%20static으로%20만들어라.md) (연로그)
+- [x] 25. [톱레벨 클래스는 한 파일에 하나만 담으라](./04장/아이템_25/톱레벨_클래스는_한_파일에_하나만_담으라.md) (티키)
+- [x] 26. [로 타입은 사용하지 말라](./05장/아이템_26/로%20타입은%20사용하지%20말라.md) (루키)
+- [ ] 27. 비검사 경고를 제거하라
+- [x] 28. [배열보다는 리스트를 사용하라](./05장/아이템_28/배열보다는_리스트를_사용하라.md) (토르)
+- [x] 29. [이왕이면 제네릭 타입으로 만들라](./05장/아이템_29/이왕이면%20제네릭%20타입으로%20만들라.pdf) (오찌)
+- [x] 30. [이왕이면 제네릭 메서드로 만들라](./05장/아이템_30/이왕이면_제네릭_메서드로_만들라.md) (오찌)
+- [x] 31. [한정적 와일드카드를 사용해 API 유연성을 높이라](./05장/아이템_31/한정적%20와일드카드를%20사용해%20API%20유연성을%20높이라.md) (루키)
+- [x] 32. [제네릭과 가변인수를 함께 쓸 때는 신중하라](./05장/아이템_32/제네릭과_가변인수를_함께_쓸_때는_신중하라.pdf)	(오찌)
+- [ ] 33. 타입 안전 이종 컨테이너를 고려하라
+- [x] 34. [int 상수 대신 열거 타입을 사용하라](./06장/아이템_34/이펙티브_자바_알파_34.pdf) (알파)
+- [x] 35. [ordinal 메서드 대신 인스턴스 필드를 사용하라](./06장/아이템_35/ordinal_메서드_대신_인스턴스_필드를_사용하라.md) (토르)
+- [x] 36. [비트 필드 대신 EnumSet을 사용하라](./06장/아이템_36/비트_필드_대신_EnumSet을_사용하라.md)
+- [x] 37. [ordinal 인덱싱 대신 EnumMap을 사용하라](./06장/아이템_37/ordinal_인덱싱_대신_EnumMap을_사용하라.md)	(티키)
+- [x] 38. [확장할 수 있는 열거 타입이 필요하면 인터페이스를 사용하라](./06장/아이템_38/이펙티브_자바_알파_38.pdf) (알파)
+- [ ] 39. 명명 패턴보다 애너테이션을 사용하라
 - [x] 40. [@Override 애너테이션을 일관되게 사용하라](./06장/아이템_40/@Override%20애너테이션을%20일관되게%20사용하라.md) (매트)
 - [ ] 41. 정의하려는 것이 타입이라면 마커 인터페이스를 사용하라
-- [x] 42. [익명 클래스보다는 람다를 사용하라](https://github.com/woowacourse-study/2022-effective-java/blob/main/07%EC%9E%A5/%EC%95%84%EC%9D%B4%ED%85%9C_42/%EC%9D%B5%EB%AA%85%20%ED%81%B4%EB%9E%98%EC%8A%A4%EB%B3%B4%EB%8B%A4%EB%8A%94%20%EB%9E%8C%EB%8B%A4%EB%A5%BC%20%EC%82%AC%EC%9A%A9%ED%95%98%EB%9D%BC.md)	(매트)
+- [x] 42. [익명 클래스보다는 람다를 사용하라](./07장/아이템_42/익명%20클래스보다는%20람다를%20사용하라.md)	(매트)
 - [x] 43. [람다보다는 메서드 참조를 사용하라](./07장/아이템_43/람다보다는%20메서드%20참조를%20사용하라.md) (썬)
-- [x] 44. [표준 함수형 인터페이스를 사용하라](https://github.com/woowacourse-study/2022-effective-java/blob/main/07%EC%9E%A5/%EC%95%84%EC%9D%B4%ED%85%9C_44/%ED%91%9C%EC%A4%80_%ED%95%A8%EC%88%98%ED%98%95_%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4%EB%A5%BC_%EC%82%AC%EC%9A%A9%ED%95%B4%EB%9D%BC.md) (티키)
-- [x] 45. [스트림은 주의해서 사용하라](https://github.com/woowacourse-study/2022-effective-java/blob/main/07%EC%9E%A5/%EC%95%84%EC%9D%B4%ED%85%9C_45/%EC%8A%A4%ED%8A%B8%EB%A6%BC%EC%9D%80_%EC%A3%BC%EC%9D%98%ED%95%B4%EC%84%9C_%EC%82%AC%EC%9A%A9%ED%95%98%EB%9D%BC.md)	(야호)
-- [x] 46. [스트림에서는 부작용 없는 함수를 사용하라](https://github.com/woowacourse-study/2022-effective-java/blob/main/07%EC%9E%A5/%EC%95%84%EC%9D%B4%ED%85%9C_46/%EC%8A%A4%ED%8A%B8%EB%A6%BC%EC%97%90%EC%84%9C%EB%8A%94_%EB%B6%80%EC%9E%91%EC%9A%A9%EC%97%86%EB%8A%94_%ED%95%A8%EC%88%98%EB%A5%BC_%EC%82%AC%EC%9A%A9%ED%95%98%EB%9D%BC.md) (후니)
-- [x] 47. [반환 타입으로는 스트림보다 컬렉션이 낫다](https://github.com/woowacourse-study/2022-effective-java/blob/main/07%EC%9E%A5/%EC%95%84%EC%9D%B4%ED%85%9C_47/%EB%B0%98%ED%99%98%ED%83%80%EC%9E%85%EC%9D%80_%EC%8A%A4%ED%8A%B8%EB%A6%BC%EB%B3%B4%EB%8B%A4_%EC%BB%AC%EB%A0%89%EC%85%98%EC%9C%BC%EB%A1%9C.md)	(연로그)
-- [ ] 48. 스트림 병렬화는 주의해서 적용하라	
-- [x] 49. [매개변수가 유효한지 검사하라](https://github.com/woowacourse-study/2022-effective-java/blob/main/08%EC%9E%A5/%EC%95%84%EC%9D%B4%ED%85%9C_49/%EB%A7%A4%EA%B0%9C%EB%B3%80%EC%88%98%EA%B0%80_%EC%9C%A0%ED%9A%A8%ED%95%9C%EC%A7%80_%EA%B2%80%EC%82%AC%ED%95%98%EB%9D%BC.pdf) (연로그)	
-- [x] 50. [적시에 방어적 복사본을 만들라](https://github.com/woowacourse-study/2022-effective-java/blob/main/08%EC%9E%A5/%EC%95%84%EC%9D%B4%ED%85%9C_50/%EC%A0%81%EC%8B%9C%EC%97%90_%EB%B0%A9%EC%96%B4%EC%A0%81_%EB%B3%B5%EC%82%AC%EB%B3%B8%EC%9D%84_%EB%A7%8C%EB%93%A4%EB%9D%BC.md) (야호)	
-- [x] 51. [메서드 시그니처를 신중히 설계하라](https://github.com/woowacourse-study/2022-effective-java/blob/main/08%EC%9E%A5/%EC%95%84%EC%9D%B4%ED%85%9C_51/%EB%A9%94%EC%84%9C%EB%93%9C_%EC%8B%9C%EA%B7%B8%EB%8B%88%EC%B2%98%EB%A5%BC_%EC%8B%A0%EC%A4%91%ED%9E%88_%EC%84%A4%EA%B3%84%ED%95%98%EB%9D%BC.md) (티키)
-- [x] 52. [다중정의는 신중히 사용하라](https://github.com/woowacourse-study/2022-effective-java/blob/main/08%EC%9E%A5/%EC%95%84%EC%9D%B4%ED%85%9C_52/%EC%9D%B4%ED%8E%99%ED%8B%B0%EB%B8%8C_%EC%9E%90%EB%B0%94_%EC%95%8C%ED%8C%8C_52.pdf) (알파)
-- [x] 53. [가변인수는 신중히 사용하라](https://github.com/woowacourse-study/2022-effective-java/blob/main/08%EC%9E%A5/%EC%95%84%EC%9D%B4%ED%85%9C_53/README.md) (후니)	
-- [x] 54. [null이 아닌, 빈 컬렉션이나 배열을 반환하라](https://github.com/woowacourse-study/2022-effective-java/blob/main/08%EC%9E%A5/%EC%95%84%EC%9D%B4%ED%85%9C_54/null%EC%9D%B4_%EC%95%84%EB%8B%8C_%EB%B9%88_%EC%BB%AC%EB%A0%89%EC%85%98%EC%9D%B4%EB%82%98_%EB%B0%B0%EC%97%B4%EC%9D%84_%EB%B0%98%ED%99%98%ED%95%98%EB%9D%BC.md) (호호)
-- [x] 55. [옵셔널 반환은 신중히 하라](https://github.com/woowacourse-study/2022-effective-java/blob/main/08%EC%9E%A5/%EC%95%84%EC%9D%B4%ED%85%9C_55/%EC%98%B5%EC%85%94%EB%84%90_%EB%B0%98%ED%99%98%EC%9D%80_%EC%8B%A0%EC%A4%91%ED%9E%88_%ED%95%98%EB%9D%BC.md) (호호)	
+- [x] 44. [표준 함수형 인터페이스를 사용하라](./07장/아이템_44/표준_함수형_인터페이스를_사용해라.md) (티키)
+- [x] 45. [스트림은 주의해서 사용하라](./07장/아이템_45/스트림은_주의해서_사용하라.md)	(야호)
+- [x] 46. [스트림에서는 부작용 없는 함수를 사용하라](./07장/아이템_46/스트림에서는_부작용없는_함수를_사용하라.md) (후니)
+- [x] 47. [반환 타입으로는 스트림보다 컬렉션이 낫다](./07장/아이템_47/반환타입은_스트림보다_컬렉션으로.md)	(연로그)
+- [ ] 48. 스트림 병렬화는 주의해서 적용하라
+- [x] 49. [매개변수가 유효한지 검사하라](./08장/아이템_49/저화질_ver.pdf) (연로그)
+- [x] 50. [적시에 방어적 복사본을 만들라](./08장/아이템_50/적시에_방어적_복사본을_만들라.md) (야호)
+- [x] 51. [메서드 시그니처를 신중히 설계하라](./08장/아이템_51/메서드_시그니처를_신중히_설계하라.md) (티키)
+- [x] 52. [다중정의는 신중히 사용하라](./08장/아이템_52/이펙티브_자바_알파_52.pdf) (알파)
+- [x] 53. [가변인수는 신중히 사용하라](./08장/아이템_53/README.md) (후니)
+- [x] 54. [null이 아닌, 빈 컬렉션이나 배열을 반환하라](./08장/아이템_54/null이_아닌_빈_컬렉션이나_배열을_반환하라.md) (호호)
+- [x] 55. [옵셔널 반환은 신중히 하라](./08장/아이템_55/옵셔널_반환은_신중히_하라.md) (호호)
 - [ ] 56. 공개된 API 요소에는 항상 문서화 주석을 작성하라
 - [x] 57. [지역변수의 범위를 최소화하라](./09장/아이템_57/지역변수의_범위를_최소화하라.md)	(후니)
-- [x] 58. [전통적인 for 문보다는 for-each 문을 사용하라](https://github.com/woowacourse-study/2022-effective-java/blob/main/09%EC%9E%A5/%EC%95%84%EC%9D%B4%ED%85%9C_58/%EC%A0%84%ED%86%B5%EC%A0%81%EC%9D%B8_for_%EB%AC%B8%EB%B3%B4%EB%8B%A4%EB%8A%94_for-each_%EB%AC%B8%EC%9D%84_%EC%82%AC%EC%9A%A9%ED%95%98%EB%9D%BC.md)	(썬)
-- [x] 59. [라이브러리를 익히고 사용하라](https://github.com/woowacourse-study/2022-effective-java/blob/main/09%EC%9E%A5/%EC%95%84%EC%9D%B4%ED%85%9C_59/%EB%9D%BC%EC%9D%B4%EB%B8%8C%EB%9F%AC%EB%A6%AC%EB%A5%BC_%EC%9D%B5%ED%9E%88%EA%B3%A0_%EC%82%AC%EC%9A%A9%ED%95%98%EB%9D%BC.md) (에덴)
-- [x] 60. [정확한 답이 필요하다면 float와 double은 피하라](https://github.com/woowacourse-study/2022-effective-java/blob/main/09%EC%9E%A5/%EC%95%84%EC%9D%B4%ED%85%9C_60/%EC%A0%95%ED%99%95%ED%95%9C%20%EB%8B%B5%EC%9D%B4%20%ED%95%84%EC%9A%94%ED%95%98%EB%8B%A4%EB%A9%B4%20float%EC%99%80%20double%EC%9D%80%20%ED%94%BC%ED%95%98%EB%9D%BC.md) (매트)
-- [x] 61. [박싱된 기본 타입보다는 기본 타입을 사용하라](https://github.com/woowacourse-study/2022-effective-java/blob/main/09%EC%9E%A5/%EC%95%84%EC%9D%B4%ED%85%9C_61/%EB%B0%95%EC%8B%B1%EB%90%9C%20%EA%B8%B0%EB%B3%B8%20%ED%83%80%EC%9E%85%EB%B3%B4%EB%8B%A4%EB%8A%94%20%EA%B8%B0%EB%B3%B8%20%ED%83%80%EC%9E%85%EC%9D%84%20%EC%82%AC%EC%9A%A9%ED%95%98%EB%9D%BC.md) (토르)	
-- [x] 62. [다른 타입이 적절하다면 문자열 사용을 피하라](https://github.com/woowacourse-study/2022-effective-java/blob/main/09%EC%9E%A5/%EC%95%84%EC%9D%B4%ED%85%9C_62/%EB%8B%A4%EB%A5%B8_%ED%83%80%EC%9E%85%EC%9D%B4_%EC%A0%81%EC%A0%88%ED%95%98%EB%8B%A4%EB%A9%B4_%EB%AC%B8%EC%9E%90%EC%97%B4_%EC%82%AC%EC%9A%A9%EC%9D%84_%ED%94%BC%ED%95%98%EB%9D%BC.md) (야호)
-- [x] 63. [문자열 연결은 느리니 주의하라](https://github.com/woowacourse-study/2022-effective-java/blob/main/09%EC%9E%A5/%EC%95%84%EC%9D%B4%ED%85%9C_63/%EC%9D%B4%ED%8E%99%ED%8B%B0%EB%B8%8C_%EC%9E%90%EB%B0%94_%EC%95%8C%ED%8C%8C_63.pdf) (알파)	
-- [x] 64. [객체는 인터페이스를 사용해 참조하라](https://github.com/woowacourse-study/2022-effective-java/blob/main/09%EC%9E%A5/%EC%95%84%EC%9D%B4%ED%85%9C_64/%EA%B0%9D%EC%B2%B4%EB%8A%94_%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4%EB%A5%BC_%EC%82%AC%EC%9A%A9%ED%95%B4_%EC%B0%B8%EC%A1%B0%ED%95%98%EB%9D%BC.pdf) (후니)
-- [x] 65. [리플렉션보다는 인터페이스를 사용하라](https://github.com/woowacourse-study/2022-effective-java/blob/main/09%EC%9E%A5/%EC%95%84%EC%9D%B4%ED%85%9C_65/%EB%A6%AC%ED%94%8C%EB%A0%89%EC%85%98_%EB%B3%B4%EB%8B%A4%EB%8A%94_%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4%EB%A5%BC_%EC%82%AC%EC%9A%A9%ED%95%98%EB%9D%BC.md) (에덴)
-- [x] 66. [네이티브 메서드는 신중히 사용하라](https://github.com/woowacourse-study/2022-effective-java/blob/main/09%EC%9E%A5/%EC%95%84%EC%9D%B4%ED%85%9C_66/%EB%84%A4%EC%9D%B4%ED%8B%B0%EB%B8%8C_%EB%A9%94%EC%84%9C%EB%93%9C%EB%8A%94_%EC%8B%A0%EC%A4%91%ED%9E%88_%EC%82%AC%EC%9A%A9%ED%95%98%EB%9D%BC.md) (에덴)
-- [ ] 67. 최적화는 신중히 하라	
-- [x] 68. [일반적으로 통용되는 명명 규칙을 따르라](https://github.com/woowacourse-study/2022-effective-java/blob/main/09%EC%9E%A5/%EC%95%84%EC%9D%B4%ED%85%9C_68/%EC%9D%BC%EB%B0%98%EC%A0%81%EC%9C%BC%EB%A1%9C%20%ED%86%B5%EC%9A%A9%EB%90%98%EB%8A%94%20%EB%AA%85%EB%AA%85%20%EA%B7%9C%EC%B9%99%EC%9D%84%20%EB%94%B0%EB%A5%B4%EB%9D%BC.md) (썬)
-- [x] 69. [예외는 진짜 예외 상황에만 사용하라](https://github.com/woowacourse-study/2022-effective-java/blob/main/10%EC%9E%A5/%EC%95%84%EC%9D%B4%ED%85%9C_69/%EC%98%88%EC%99%B8%EB%8A%94_%EC%A7%84%EC%A7%9C_%EC%98%88%EC%99%B8_%EC%83%81%ED%99%A9%EC%97%90%EC%84%9C%EB%A7%8C_%EC%82%AC%EC%9A%A9%ED%95%98%EB%9D%BC.md) (호호)
-- [x] 70. [복구할 수 있는 상황에는 검사 예외를, 프로그래밍 오류에는 런타임 예외를 사용하라](https://github.com/woowacourse-study/2022-effective-java/blob/main/10%EC%9E%A5/%EC%95%84%EC%9D%B4%ED%85%9C_70/item70.md) (매트)
-- [x] 71. [필요 없는 검사 예외 사용은 피하라](https://github.com/woowacourse-study/2022-effective-java/blob/main/10%EC%9E%A5/%EC%95%84%EC%9D%B4%ED%85%9C_71/%EC%95%84%EC%9D%B4%ED%85%9C71_%ED%95%84%EC%9A%94_%EC%97%86%EB%8A%94_%EA%B2%80%EC%82%AC_%EC%98%88%EC%99%B8_%EC%82%AC%EC%9A%A9%EC%9D%80_%ED%94%BC%ED%95%98%EB%9D%BC.md)	(후니)
-- [x] 72. [표준 예외를 사용하라](https://github.com/woowacourse-study/2022-effective-java/blob/main/10%EC%9E%A5/%EC%95%84%EC%9D%B4%ED%85%9C_72/%EC%95%84%EC%9D%B4%ED%85%9C%2072.%20%ED%91%9C%EC%A4%80%20%EC%98%88%EC%99%B8%EB%A5%BC%20%EC%82%AC%EC%9A%A9%ED%95%98%EB%9D%BC.md) (토르)	
-- [x] 73. [추상화 수준에 맞는 예외를 던지라](https://github.com/woowacourse-study/2022-effective-java/blob/main/10%EC%9E%A5/%EC%95%84%EC%9D%B4%ED%85%9C_73/%EC%95%84%EC%9D%B4%ED%85%9C%2073.%20%EC%B6%94%EC%83%81%ED%99%94%20%EC%88%98%EC%A4%80%EC%97%90%20%EB%A7%9E%EB%8A%94%20%EC%98%88%EC%99%B8%EB%A5%BC%20%EB%8D%98%EC%A7%80%EB%9D%BC.md)	(루키)
-- [x] 74. [메서드가 던지는 모든 예외를 문서화하라](https://github.com/woowacourse-study/2022-effective-java/blob/main/10%EC%9E%A5/%EC%95%84%EC%9D%B4%ED%85%9C_74/%EB%A9%94%EC%84%9C%EB%93%9C%EA%B0%80%20%EB%8D%98%EC%A7%80%EB%8A%94%20%EB%AA%A8%EB%93%A0%20%EC%98%88%EC%99%B8%EB%A5%BC%20%EB%AC%B8%EC%84%9C%ED%99%94%ED%95%98%EB%9D%BC.md) (매트)
-- [X] 75. [예외의 상세 메시지에 실패 관련 정보를 담으라](https://aeno.notion.site/75-0af38b826d094e0b9dffaea645bbb9c9) (호호)
-- [x] 76. [가능한 한 실패 원자적으로 만들라](https://github.com/woowacourse-study/2022-effective-java/blob/main/10%EC%9E%A5/%EC%95%84%EC%9D%B4%ED%85%9C_76/%EC%9D%B4%ED%8E%99%ED%8B%B0%EB%B8%8C_%EC%9E%90%EB%B0%94_%EC%95%8C%ED%8C%8C_76.pdf) (알파)
-- [x] 77. [예외를 무시하지 말라](https://github.com/woowacourse-study/2022-effective-java/blob/main/10%EC%9E%A5/%EC%95%84%EC%9D%B4%ED%85%9C_77/%EC%98%88%EC%99%B8%EB%A5%BC_%EB%AC%B4%EC%8B%9C%ED%95%98%EC%A7%80_%EB%A7%90%EB%9D%BC.md) (썬)
-- [x] 78. [공유 중인 가변 데이터는 동기화해 사용하라](https://github.com/woowacourse-study/2022-effective-java/blob/main/11%EC%9E%A5/%EC%95%84%EC%9D%B4%ED%85%9C_78/%EA%B3%B5%EC%9C%A0_%EC%A4%91%EC%9D%B8_%EA%B0%80%EB%B3%80_%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%8A%94_%EB%8F%99%EA%B8%B0%ED%99%94%ED%95%B4_%EC%82%AC%EC%9A%A9%ED%95%98%EB%9D%BC.md) (에덴)	
-- [ ] 79. 과도한 동기화는 피하라	
-- [ ] 80. 스레드보다는 실행자, 태스크, 스트림을 애용하라	
-- [ ] 81. wait와 notify보다는 동시성 유틸리티를 애용하라	
-- [ ] 82. 스레드 안전성 수준을 문서화하라	
-- [ ] 83. 지연 초기화는 신중히 사용하라	
+- [x] 58. [전통적인 for 문보다는 for-each 문을 사용하라](./09장/아이템_58/전통적인_for_문보다는_for-each_문을_사용하라.md)	(썬)
+- [x] 59. [라이브러리를 익히고 사용하라](./09장/아이템_59/라이브러리를_익히고_사용하라.md) (에덴)
+- [x] 60. [정확한 답이 필요하다면 float와 double은 피하라](./09장/아이템_60/정확한%20답이%20필요하다면%20float와%20double은%20피하라.md) (매트)
+- [x] 61. [박싱된 기본 타입보다는 기본 타입을 사용하라](./09장/아이템_61/박싱된%20기본%20타입보다는%20기본%20타입을%20사용하라.md) (토르)
+- [x] 62. [다른 타입이 적절하다면 문자열 사용을 피하라](./09장/아이템_62/다른_타입이_적절하다면_문자열_사용을_피하라.md) (야호)
+- [x] 63. [문자열 연결은 느리니 주의하라](./09장/아이템_63/이펙티브_자바_알파_63.pdf) (알파)
+- [x] 64. [객체는 인터페이스를 사용해 참조하라](./09장/아이템_64/객체는_인터페이스를_사용해_참조하라.pdf) (후니)
+- [x] 65. [리플렉션보다는 인터페이스를 사용하라](./09장/아이템_65/리플렉션_보다는_인터페이스를_사용하라.md) (에덴)
+- [x] 66. [네이티브 메서드는 신중히 사용하라](./09장/아이템_66/네이티브_메서드는_신중히_사용하라.md) (에덴)
+- [ ] 67. 최적화는 신중히 하라
+- [x] 68. [일반적으로 통용되는 명명 규칙을 따르라](./09장/아이템_68/일반적으로%20통용되는%20명명%20규칙을%20따르라.md) (썬)
+- [x] 69. [예외는 진짜 예외 상황에만 사용하라](./10장/아이템_69/예외는_진짜_예외_상황에서만_사용하라.md) (호호)
+- [x] 70. [복구할 수 있는 상황에는 검사 예외를, 프로그래밍 오류에는 런타임 예외를 사용하라](./10장/아이템_70/item70.md) (매트)
+- [x] 71. [필요 없는 검사 예외 사용은 피하라](./10장/아이템_71/아이템71_필요_없는_검사_예외_사용은_피하라.md)	(후니)
+- [x] 72. [표준 예외를 사용하라](./10장/아이템_72/아이템%2072.%20표준%20예외를%20사용하라.md) (토르)
+- [x] 73. [추상화 수준에 맞는 예외를 던지라](./10장/아이템_73/아이템%2073.%20추상화%20수준에%20맞는%20예외를%20던지라.md)	(루키)
+- [x] 74. [메서드가 던지는 모든 예외를 문서화하라](./10장/아이템_74/메서드가%20던지는%20모든%20예외를%20문서화하라.md) (매트)
+- [X] 75. [예외의 상세 메시지에 실패 관련 정보를 담으라](./10장/아이템_75/예외는_상세_메시지에_실패_관련_정보를_담으라.md) (호호)
+- [x] 76. [가능한 한 실패 원자적으로 만들라](./10장/아이템_76/이펙티브_자바_알파_76.pdf) (알파)
+- [x] 77. [예외를 무시하지 말라](./10장/아이템_77/예외를_무시하지_말라.md) (썬)
+- [x] 78. [공유 중인 가변 데이터는 동기화해 사용하라](./11장/아이템_78/공유_중인_가변_데이터는_동기화해_사용하라.md) (에덴)
+- [ ] 79. 과도한 동기화는 피하라
+- [ ] 80. 스레드보다는 실행자, 태스크, 스트림을 애용하라
+- [ ] 81. wait와 notify보다는 동시성 유틸리티를 애용하라
+- [ ] 82. 스레드 안전성 수준을 문서화하라
+- [ ] 83. 지연 초기화는 신중히 사용하라
 - [ ] 84. 프로그램의 동작을 스레드 스케줄러에 기대지 말라
-- [x] 85. [자바 직렬화의 대안을 찾으라](https://github.com/woowacourse-study/2022-effective-java/blob/main/12%EC%9E%A5/%EC%95%84%EC%9D%B4%ED%85%9C_85/%EC%95%84%EC%9D%B4%ED%85%9C_85_%EC%9E%90%EB%B0%94_%EC%A7%81%EB%A0%AC%ED%99%94%EC%9D%98_%EB%8C%80%EC%95%88%EC%9D%84_%EC%B0%BE%EC%9C%BC%EB%9D%BC.pdf) (후니)  	
-- [x] 86. [Serializable을 구현할지는 신중히 결정하라](https://github.com/woowacourse-study/2022-effective-java/blob/main/12%EC%9E%A5/%EC%95%84%EC%9D%B4%ED%85%9C_86/%EC%95%84%EC%9D%B4%ED%85%9C_86_Serializable%EC%9D%84_%EA%B5%AC%ED%98%84%ED%95%A0%EC%A7%80%EB%8A%94_%EC%8B%A0%EC%A4%91%ED%9E%88_%EA%B2%B0%EC%A0%95%ED%95%98%EB%9D%BC.md) (루키)
-- [ ] 87. 커스텀 직렬화 형태를 고려해보라	
-- [ ] 88. readObject 메서드는 방어적으로 작성하라	
-- [ ] 89. 인스턴스 수를 통제해야 한다면 readResolve보다는 열거 타입을 사용하라	
+- [x] 85. [자바 직렬화의 대안을 찾으라](./12장/아이템_85/아이템_85_자바_직렬화의_대안을_찾으라.pdf) (후니)
+- [x] 86. [Serializable을 구현할지는 신중히 결정하라](./12장/아이템_86/아이템_86_Serializable을_구현할지는_신중히_결정하라.md) (루키)
+- [ ] 87. 커스텀 직렬화 형태를 고려해보라
+- [ ] 88. readObject 메서드는 방어적으로 작성하라
+- [ ] 89. 인스턴스 수를 통제해야 한다면 readResolve보다는 열거 타입을 사용하라
 - [ ] 90. 직렬화된 인스턴스 대신 직렬화 프록시 사용을 검토하라
 
 ### 학습 목적
